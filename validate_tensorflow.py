@@ -23,7 +23,7 @@ def main():
     tf.debugging.set_log_device_placement(True)
 
     A = tf.random.normal((5, 5))
-    b = tf.random.normal((5,1))
+    b = tf.random.normal((5, 1))
     print(tf.linalg.solve(A,b))
 
     print("\n")

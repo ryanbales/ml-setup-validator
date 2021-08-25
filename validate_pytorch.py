@@ -21,7 +21,7 @@ def main():
 
     A = torch.rand(5, 5).to(device)
     b = torch.rand(5, 1).to(device)
-    print(torch.solve(b, A))
+    print(torch.linalg.solve(A, b))
 
     print("\n")
     print("PyTorch Validation Completed")
